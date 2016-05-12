@@ -157,7 +157,7 @@ begin
   T.Start;
   while T.ElapsedTime < Time do
   begin
-    if Reflect.Text.IsMenuOpen then
+     If self.chooseOptionMulti(Options) then
       Exit(True);
 
     Wait(20 + Random(20));
